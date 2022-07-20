@@ -1,0 +1,410 @@
+@charset "utf-8";
+@import url('http://fonts.cdnfonts.com/css/monument-extended');
+/* CSS Document */
+*{ margin:0;
+padding:0
+}
+.container{
+	position: relative;
+	z-index: 3;
+}
+.ten{
+	padding-left: 10px;
+	color: #FFFFFF
+}
+nav{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-wrap: wrap;
+	position: fixed;
+	background:#000000;
+	padding: 2px
+}
+.logo{
+	height: 30px;
+	cursor: pointer;
+	padding-left: 20px
+}
+nav ul{
+	flex: 1;
+	text-align: right;
+	padding-right: 30px;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 25px;
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+}
+li{
+	font-size: 15px;
+	padding-right: 30px
+}
+nav ul li a::after{
+	content: '';
+	width: 0%;
+	height: 4px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translate(-50%);
+	background:#FF4034;
+	transition: width 0.4s;
+}
+nav ul li a:hover::after{
+	width: 100%;
+	height: 4px;
+	border-radius: 10px
+}
+html {
+  scroll-behavior: smooth;
+}
+.cursor{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #EBE4D8;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .0.5s;
+		z-index: 4
+}
+
+.cursor2{
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background-color:#EBE4D8;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .14s;
+		z-index: 4
+}
+.sec1{
+	background-image:url("Webp.net-gifmaker (5).gif");
+	background-size: cover;
+	height: 100vh;
+	
+}
+.sec1 p{
+ font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #FF4034;
+	text-align: center;
+	font-size: 25px;
+	padding:20px 0px 20px 0px;
+	
+}
+.bosung{
+	height: 10vh;
+	background-color: #000;
+}
+.chu{
+ font-family: 'Dela Gothic One', cursive;
+color: #EBE4D8;
+	text-align: center;
+	font-size:73.7px;
+	display: inline;
+	line-height: 0.8;
+
+}
+.chu2{
+    transition: all 0.5s;
+	letter-spacing: 0px;
+}
+.chu2:hover{
+	color: #FF4034;
+    transform: skewX(-20deg);
+	margin:10px
+}
+.sec2{
+	background-image:url("Webp.net-gifmaker (7).gif");
+	background-size: cover;
+	height: 90vh;
+}
+.a1{
+	text-decoration-line:line-through;
+	text-decoration-color: #EBE4D8
+}
+.intro{
+	padding-top: 30px
+}
+.intro p{
+ font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #FF4034;
+	text-align: center;
+	font-size: 25px;
+	padding:20px 0px 20px 0px;
+}
+.a3{
+	color: #EBE4D8;
+	text-decoration: underline #EBE4D8;
+	transition: all .2s linear;
+}
+.a3:hover{
+	text-decoration: underline #000;
+	transition: all .2s linear;
+}
+.sec2 h1{
+	font-family: 'Dela Gothic One', cursive;
+color: #EBE4D8;
+	text-align: center;
+	padding-top: 70px;
+}
+.sec2 p{
+	margin-top: 30px
+}
+.sec3{
+	background-image:url("Webp.net-gifmaker (15).gif");
+	background-size: cover;
+	height: 210vh
+}
+.sec3 h1{
+	font-family: 'Dela Gothic One', cursive;
+color: #EBE4D8;
+	text-align: center;
+	padding: 100px 0px 30px 0px;
+}
+.anh1 img{
+	width: 32%;
+	border-radius: 15px;
+	display: inline-block;
+	margin: 70px 30px 0px 160px;
+	border: 7px solid black;
+	transition: all .9s linear;
+}
+.anh1img:hover{
+	border-radius: 235px;
+	transition: all .9s linear;
+	
+}
+.anh1 p{
+	display: inline-block;
+ font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #EBE4D8;
+	font-size: 20px;
+
+}
+.sm{
+	color: #EBE4D8;
+	text-decoration: 4px underline #EBE4D8;
+	transition: all .2s linear;
+	font-size: 25px;
+	font-family: 'Dela Gothic One', cursive;
+	
+}
+.sm:hover{
+	text-decoration: 4px underline #FF4034;
+	transition: all .2s linear;
+}
+.anh2 img{
+	width: 32%;
+	border-radius: 15px;
+	display: inline-block;
+	margin: 70px 160px 30px 30px;
+	border: 7px solid black;
+	 transition:0.9s;
+}
+.anh2img:hover{
+	border-radius: 235px;
+	 transition:0.9s;
+}
+.anh2 p{
+	display: inline-block;
+ font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #EBE4D8;
+	font-size: 20px;
+	text-align: right;
+	float: left;
+	margin: 360px 30px 0px 480px
+
+}
+.smm{
+	color: #EBE4D8;
+	text-decoration: 4px underline #EBE4D8;
+	transition: all .2s linear;
+	font-size: 25px;
+	font-family: 'Dela Gothic One', cursive;
+	text-align: right;
+	float: left;
+}
+.smm:hover{
+	text-decoration: 4px underline #FF4034;
+	transition: all .2s linear;
+}
+.smm:hover .muiten::before{
+	padding-left: 10px
+}
+.chu3{
+    transition: all 0.3s;
+	font-size: 40px
+}
+.chu3:hover{
+	color: #FF4034;
+    transform: skewX(-20deg);
+	text-shadow: #FF0000 -1px -2px 0.5em;
+}
+.chu4{
+    transition: all 0.3s;
+	font-size: 40px
+}
+.chu4:hover{
+	color: #000;
+    transform: skewX(-20deg);
+	text-shadow: #000 -1px -2px 0.5em;
+}
+.here{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #EBE4D8;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 50px;
+	
+}
+.sec4{
+	background-image:url("Webp.net-gifmaker (12).gif");
+	background-size: cover;
+	height: 98vh
+}
+hr{
+	height: 4px;
+}
+.sec4 p{
+ font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #FF4034;
+	text-align: center;
+	font-size: 25px;
+	padding:30px 0px 20px 0px;
+}
+.sec4 h1{
+	font-family: 'Dela Gothic One', cursive;
+color: #EBE4D8;
+	text-align: center;
+	padding-top: 150px;
+}
+.a4{
+	color: #EBE4D8;
+}
+.a5{
+	color: #000;
+}
+.name, .email{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	width: 305px;
+	height: 50px;
+	background-color: #EBE4D8;
+	border-radius: 8px;
+	border-color: 3px #FF4034; 
+	font-size: 16px;
+	text-align: center
+}
+.mess{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	width: 636px;
+	height: 80px;
+	background-color: #EBE4D8;
+	border-radius: 8px;
+	border-color: 3px #FF4034; 
+	font-size: 16px;
+	text-align: center;
+		
+}
+.khung{
+	padding-top: 40px
+}
+.smmm{
+	color: #EBE4D8;
+	text-decoration: 4px underline #EBE4D8;
+	transition: all .2s linear;
+	font-size: 25px;
+	font-family: 'Dela Gothic One', cursive;
+	text-align: center;
+	letter-spacing: 0px;
+}
+.smmm:hover{
+	text-decoration: 4px underline #000;
+	transition: all .2s linear;
+	
+}
+.sec5{
+	
+	background-color: #FF4034;
+	height: 110px;
+} 	
+.khungcuoi{
+	float: right;
+	padding: 60px 65px 0px 0px
+}
+.khungcuoi p{
+	 font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #EBE4D8;
+	font-size: 15px;
+	display: inline-block;
+	padding-left: 20px
+	
+}
+.khung input{
+	background-color: #EBE4D8;
+	 transition: all 0.6s;
+	border: 2px solid black;
+	 text-decoration: none;
+	color: black;
+	
+}
+.khung input:hover{
+	background-color: #000;
+	border: 2px solid #FF4034;
+	 text-decoration: none;
+	color: #FF4034;
+	
+}
+.chu5{
+    transition: all 0.3s;
+	font-size: 25px
+}
+.chu5:hover{
+	color: #000;
+    transform: skewX(-20deg);
+	text-shadow: #000 -1px -2px 0.5em;
+}
+.icon1, .icon2, .icon3{
+	display: inline-block;
+	background-color: #EBE4D8;
+	border-radius: 100px;
+	margin: 20px;
+	border: 3px solid #EBE4D8;
+
+    transition: all 0.4s;
+}
+.icon1:hover{
+	background-color: #000;
+	border: 3px solid #000;
+
+}
+.khungcuoi p{
+	color: #EBE4D8;
+	text-decoration: 2px underline #EBE4D8;
+	transition: all .2s linear;
+	letter-spacing: 0px;
+}
+.khungcuoi p:hover{
+	text-decoration: 2px underline #FF4034;
+	transition: all .2s linear;
+
+}
+.icon{
+	display: inline;
+	margin: 9px 0px 0px 60px;
+	float: left
+}
